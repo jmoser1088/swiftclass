@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O5m-79-NQY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master Breweries List-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Master Breweries List" id="BYZ-38-t0r" customClass="MasterBreweriesVC" customModule="Beer_Club" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0b-37-Tnc" userLabel="birdsongBreweryView">
+                                <rect key="frame" x="16" y="88" width="339" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="haD-wQ-pKn">
+                                        <rect key="frame" x="20" y="12.5" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="p7m-Xq-sw0"/>
+                                            <constraint firstAttribute="height" constant="75" id="rgu-Bj-a4K"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PS-8K-cup">
+                                        <rect key="frame" x="120" y="39.5" width="199" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="4PS-8K-cup" firstAttribute="centerY" secondItem="haD-wQ-pKn" secondAttribute="centerY" id="24m-5s-1Vb"/>
+                                    <constraint firstAttribute="trailing" secondItem="4PS-8K-cup" secondAttribute="trailing" constant="20" id="8OG-0K-44d"/>
+                                    <constraint firstAttribute="height" constant="100" id="Aqq-8N-4lR"/>
+                                    <constraint firstItem="haD-wQ-pKn" firstAttribute="leading" secondItem="W0b-37-Tnc" secondAttribute="leading" constant="20" id="FhO-9H-etz"/>
+                                    <constraint firstItem="4PS-8K-cup" firstAttribute="leading" secondItem="haD-wQ-pKn" secondAttribute="trailing" constant="25" id="Lxy-YL-71P"/>
+                                    <constraint firstItem="haD-wQ-pKn" firstAttribute="centerY" secondItem="W0b-37-Tnc" secondAttribute="centerY" id="bG5-YD-mGO"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hxT-OV-DFJ" appends="YES" id="ZBS-AL-xfM"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTI-xR-ZNK" userLabel="nodaBreweryView">
+                                <rect key="frame" x="16" y="208" width="339" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O35-Az-PdH">
+                                        <rect key="frame" x="20" y="12.5" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="IqX-5f-BVy"/>
+                                            <constraint firstAttribute="width" constant="75" id="Kes-3Y-CeQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvM-pD-DgG">
+                                        <rect key="frame" x="120" y="39.5" width="199" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KvM-pD-DgG" secondAttribute="trailing" constant="20" id="AVQ-du-GHw"/>
+                                    <constraint firstAttribute="height" constant="100" id="E9Z-vL-P4C"/>
+                                    <constraint firstItem="O35-Az-PdH" firstAttribute="leading" secondItem="kTI-xR-ZNK" secondAttribute="leading" constant="20" id="GKf-0Q-onO"/>
+                                    <constraint firstItem="O35-Az-PdH" firstAttribute="centerY" secondItem="kTI-xR-ZNK" secondAttribute="centerY" id="VrQ-ZV-I7Y"/>
+                                    <constraint firstItem="KvM-pD-DgG" firstAttribute="leading" secondItem="O35-Az-PdH" secondAttribute="trailing" constant="25" id="xnb-Ge-FI4"/>
+                                    <constraint firstItem="KvM-pD-DgG" firstAttribute="centerY" secondItem="O35-Az-PdH" secondAttribute="centerY" id="zPp-0K-9Yc"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Jws-9s-hgk" appends="YES" id="ZZb-D6-twl"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDS-RN-tyC" userLabel="tripleCBreweryView">
+                                <rect key="frame" x="16" y="448" width="339" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TBU-x8-3lL">
+                                        <rect key="frame" x="20" y="12.5" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="c1B-ZQ-YbO"/>
+                                            <constraint firstAttribute="height" constant="75" id="gNX-pA-Pk2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoZ-Q4-WEs">
+                                        <rect key="frame" x="120" y="39.5" width="199" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CoZ-Q4-WEs" secondAttribute="trailing" constant="20" id="5Tu-re-g5V"/>
+                                    <constraint firstItem="TBU-x8-3lL" firstAttribute="centerY" secondItem="tDS-RN-tyC" secondAttribute="centerY" id="BbC-qc-NQ1"/>
+                                    <constraint firstAttribute="height" constant="100" id="G4r-jZ-0bB"/>
+                                    <constraint firstItem="TBU-x8-3lL" firstAttribute="leading" secondItem="tDS-RN-tyC" secondAttribute="leading" constant="20" id="V5W-qd-ql9"/>
+                                    <constraint firstItem="CoZ-Q4-WEs" firstAttribute="centerY" secondItem="TBU-x8-3lL" secondAttribute="centerY" id="clW-jm-CXX"/>
+                                    <constraint firstItem="CoZ-Q4-WEs" firstAttribute="leading" secondItem="TBU-x8-3lL" secondAttribute="trailing" constant="25" id="mV1-eO-uXU"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Rff-gN-6Mp" appends="YES" id="lqf-vd-TWm"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lxf-Ad-Jtr" userLabel="ombBreweryView">
+                                <rect key="frame" x="16" y="328" width="339" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IwK-Zz-mEA">
+                                        <rect key="frame" x="20" y="12.5" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="qSi-3E-ZGf"/>
+                                            <constraint firstAttribute="height" constant="75" id="rAI-Jp-bGR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8p4-eY-F6T">
+                                        <rect key="frame" x="120" y="39.5" width="199" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8p4-eY-F6T" secondAttribute="trailing" constant="20" id="1Xf-Qv-yjy"/>
+                                    <constraint firstItem="IwK-Zz-mEA" firstAttribute="leading" secondItem="Lxf-Ad-Jtr" secondAttribute="leading" constant="20" id="3fH-c1-UdN"/>
+                                    <constraint firstAttribute="height" constant="100" id="7Zg-o5-MUW"/>
+                                    <constraint firstItem="8p4-eY-F6T" firstAttribute="centerY" secondItem="IwK-Zz-mEA" secondAttribute="centerY" id="7nU-v0-bBG"/>
+                                    <constraint firstItem="8p4-eY-F6T" firstAttribute="leading" secondItem="IwK-Zz-mEA" secondAttribute="trailing" constant="25" id="e0M-vU-2bG"/>
+                                    <constraint firstItem="IwK-Zz-mEA" firstAttribute="centerY" secondItem="Lxf-Ad-Jtr" secondAttribute="centerY" id="iE7-Us-PdV"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BWu-q2-5KK" appends="YES" id="xYY-gi-AiA"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lxf-Ad-Jtr" firstAttribute="top" secondItem="kTI-xR-ZNK" secondAttribute="bottom" constant="20" id="4cK-vb-r3v"/>
+                            <constraint firstItem="W0b-37-Tnc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="9m3-1q-wz2"/>
+                            <constraint firstItem="Lxf-Ad-Jtr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="IvS-Zf-YcM"/>
+                            <constraint firstItem="W0b-37-Tnc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RnG-xu-oO5"/>
+                            <constraint firstItem="tDS-RN-tyC" firstAttribute="top" secondItem="Lxf-Ad-Jtr" secondAttribute="bottom" constant="20" id="TP6-6s-AMj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tDS-RN-tyC" secondAttribute="trailing" constant="20" id="Vvw-oE-xWs"/>
+                            <constraint firstItem="kTI-xR-ZNK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YqX-eL-fbR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kTI-xR-ZNK" secondAttribute="trailing" constant="20" id="dqv-9q-3v0"/>
+                            <constraint firstItem="tDS-RN-tyC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gBS-Ha-zX6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W0b-37-Tnc" secondAttribute="trailing" constant="20" id="isb-2h-lEr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lxf-Ad-Jtr" secondAttribute="trailing" constant="20" id="mD3-h8-SUk"/>
+                            <constraint firstItem="kTI-xR-ZNK" firstAttribute="top" secondItem="W0b-37-Tnc" secondAttribute="bottom" constant="20" id="wux-7J-Din"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Na8-IX-lsr"/>
+                    <connections>
+                        <outlet property="birdsongBreweryView" destination="W0b-37-Tnc" id="sqp-IK-5MR"/>
+                        <outlet property="nodaBreweryView" destination="kTI-xR-ZNK" id="dXe-Sc-iBi"/>
+                        <outlet property="ombBreweryView" destination="Lxf-Ad-Jtr" id="mRL-S8-jQ3"/>
+                        <outlet property="tripleCBreweryView" destination="tDS-RN-tyC" id="W8Z-c2-zG6"/>
+                        <segue destination="9Qy-pa-JYy" kind="show" identifier="BreweryDetailSegue" id="ari-vu-k4z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hxT-OV-DFJ">
+                    <connections>
+                        <action selector="showBreweryDetail:" destination="BYZ-38-t0r" id="Siq-Mj-hOe"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Jws-9s-hgk">
+                    <connections>
+                        <action selector="showBreweryDetail:" destination="BYZ-38-t0r" id="kK8-aJ-oYJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="BWu-q2-5KK">
+                    <connections>
+                        <action selector="showBreweryDetail:" destination="BYZ-38-t0r" id="kck-A9-zdG"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Rff-gN-6Mp">
+                    <connections>
+                        <action selector="showBreweryDetail:" destination="BYZ-38-t0r" id="jGm-fP-bc1"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="26.53673163418291"/>
+        </scene>
+        <!--Brewery DetailVC-->
+        <scene sceneID="dXd-iM-YKg">
+            <objects>
+                <viewController id="9Qy-pa-JYy" customClass="BreweryDetailVC" customModule="Beer_Club" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sli-ar-HA4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BeerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="NOV-KR-Ntu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Em2-C8-LH1">
+                                <rect key="frame" x="16" y="92" width="181" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="Alg-a4-iDp"/>
+                                    <constraint firstAttribute="width" constant="181" id="dwT-3o-kkO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brewery Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZ9-3r-f7M">
+                                <rect key="frame" x="212" y="92" width="148" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dF-Sb-u5V">
+                                <rect key="frame" x="257.5" y="127" width="57" height="30"/>
+                                <state key="normal" title="Address"/>
+                                <connections>
+                                    <action selector="addressButton:" destination="9Qy-pa-JYy" eventType="touchUpInside" id="oAC-ik-uqs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour Times:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFG-Tp-AJr">
+                                <rect key="frame" x="232" y="183" width="108" height="22"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour Information:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbT-FN-ix7">
+                                <rect key="frame" x="212" y="210" width="148" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brewery Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmZ-rv-uL5">
+                                <rect key="frame" x="20" y="267" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JbT-FN-ix7" firstAttribute="leading" secondItem="Em2-C8-LH1" secondAttribute="trailing" constant="15" id="5RX-O3-jpV"/>
+                            <constraint firstItem="1dF-Sb-u5V" firstAttribute="centerX" secondItem="eZ9-3r-f7M" secondAttribute="centerX" id="7Ik-IN-eSH"/>
+                            <constraint firstItem="JbT-FN-ix7" firstAttribute="top" secondItem="NFG-Tp-AJr" secondAttribute="bottom" constant="5" id="FRl-Mx-jSK"/>
+                            <constraint firstItem="NOV-KR-Ntu" firstAttribute="leading" secondItem="OzQ-PI-YlK" secondAttribute="leading" id="Ii7-HU-p2X"/>
+                            <constraint firstItem="RmZ-rv-uL5" firstAttribute="leading" secondItem="OzQ-PI-YlK" secondAttribute="leading" constant="20" id="Iro-WQ-rkS"/>
+                            <constraint firstItem="1dF-Sb-u5V" firstAttribute="top" secondItem="eZ9-3r-f7M" secondAttribute="bottom" constant="15" id="MNd-0S-uo7"/>
+                            <constraint firstItem="eZ9-3r-f7M" firstAttribute="leading" secondItem="Em2-C8-LH1" secondAttribute="trailing" constant="15" id="PKO-oS-QHD"/>
+                            <constraint firstItem="eZ9-3r-f7M" firstAttribute="top" secondItem="Em2-C8-LH1" secondAttribute="top" id="QOb-ei-5YJ"/>
+                            <constraint firstItem="NFG-Tp-AJr" firstAttribute="top" secondItem="1dF-Sb-u5V" secondAttribute="bottom" constant="26" id="Rhi-Qm-BMo"/>
+                            <constraint firstItem="OzQ-PI-YlK" firstAttribute="trailing" secondItem="eZ9-3r-f7M" secondAttribute="trailing" constant="15" id="Tyk-QQ-hhy"/>
+                            <constraint firstItem="RmZ-rv-uL5" firstAttribute="top" secondItem="Em2-C8-LH1" secondAttribute="bottom" constant="17" id="bTH-km-RBS"/>
+                            <constraint firstItem="NFG-Tp-AJr" firstAttribute="centerX" secondItem="1dF-Sb-u5V" secondAttribute="centerX" id="gev-JG-HT0"/>
+                            <constraint firstItem="OzQ-PI-YlK" firstAttribute="bottom" secondItem="NOV-KR-Ntu" secondAttribute="bottom" id="iPD-r4-Vm5"/>
+                            <constraint firstItem="OzQ-PI-YlK" firstAttribute="trailing" secondItem="NOV-KR-Ntu" secondAttribute="trailing" id="ppd-uD-xrV"/>
+                            <constraint firstItem="Em2-C8-LH1" firstAttribute="top" secondItem="OzQ-PI-YlK" secondAttribute="top" constant="28" id="pxu-bt-hVi"/>
+                            <constraint firstItem="OzQ-PI-YlK" firstAttribute="trailing" secondItem="RmZ-rv-uL5" secondAttribute="trailing" constant="20" id="rw6-pA-toK"/>
+                            <constraint firstItem="NOV-KR-Ntu" firstAttribute="top" secondItem="OzQ-PI-YlK" secondAttribute="top" id="suQ-od-qFo"/>
+                            <constraint firstItem="Em2-C8-LH1" firstAttribute="leading" secondItem="OzQ-PI-YlK" secondAttribute="leading" constant="16" id="wIX-XK-PRz"/>
+                            <constraint firstItem="OzQ-PI-YlK" firstAttribute="trailing" secondItem="JbT-FN-ix7" secondAttribute="trailing" constant="15" id="xpG-bX-Ig8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OzQ-PI-YlK"/>
+                    </view>
+                    <connections>
+                        <outlet property="breweryDescription" destination="RmZ-rv-uL5" id="3Dc-5v-FLw"/>
+                        <outlet property="breweryName" destination="eZ9-3r-f7M" id="IJi-9M-Tsj"/>
+                        <outlet property="imageOutlet" destination="Em2-C8-LH1" id="03p-LK-trD"/>
+                        <outlet property="tourInformation" destination="JbT-FN-ix7" id="nmO-aN-Yhd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1D-wf-ewE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848.8" y="26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SNW-jn-FvX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O5m-79-NQY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lIX-5k-0ix">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="npW-aZ-cJC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8JR-Td-d7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BeerBackground" width="1024" height="1024"/>
+    </resources>
+</document>
